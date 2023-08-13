@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+    margin :0;
+    font-family: 'Lobster', cursive;
+}
+.container{
+    height:100vh;
+    overflow-x: hidden;
+    /* /-----/ */
+}
+.parallax{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* /-----/ */
+}
+.bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-image: url(pic4.jpg);
+    background-size: cover;
+    background-position: center;
+    /* /-----/ */
+}
+.content{
+    color:#fff;
+    font-size: xxx-large;
+/* /-----/ */}
+.static{
+    height:100vh;
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        #1B2735 50px
+    );
+    transform: translateY(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: xxx-large;
+}
+.rock1{
+    position: absolute;
+    width:80px;
+    /* /-----/ */
+    ;
+}
+.rock2{
+    position: absolute;
+    width:70px;
+    /* /-----/ */
+}
+
+.container{
+    /*  */
+    perspective: 20px;
+}
+.parallax{
+    /*  */
+     transform-style: preserve-3d;
+ }
+ bg{
+    /*  */
+      transform: translateZ(-10px) scale(1.);
+  }
+  .content{
+      /*  */
+      transform: translateZ(10px);
+  }
+  
+  .rock1{
+     /*  */
+      transform: translateZ(17px)
+          translateX(-50px) translateY(80px)
+      ;
+  }
+  .rock2{
+      /*  */
+      transform: translateZ(5px)
+          translateX(80px) translateY(30px)
+      ;
+  }
